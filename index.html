@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="custom-output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NFT preview card component</title>
+  </head>
+  <body
+    class="bg-Very_dark_blue_main_BG min-h-screen w-full flex justify-center items-center"
+  >
+    <div
+      class="p-6 w-[18rem] font-outfit bg-Very_dark_blue_card_BG rounded-2xl shadow-2xl"
+    >
+      <div class="w-[100%] relative group">
+        <img src="./images/image-equilibrium.jpg" class="rounded-md" alt="" />
+        <div
+          class="w-[100%] h-[100%] after:content-[''] after:absolute after:top-0 after:left-0 after:bg-custom-gradient after:w-[100%] after:h-[100%] w-[100%] opacity-0 group-hover:opacity-100 transition-all duration-[0.5s]"
+        >
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <img src="./images/icon-view.svg" alt="" class="" />
+          </div>
+        </div>
+      </div>
+      <h3
+        class="text-White text-xl my-3.5 hover:text-Cyan transition-all duration-[0.5s]"
+      >
+        Equilibrium #3429
+      </h3>
+      <p class="my-4 text-[0.949rem] text-Soft_blue text-lg">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div
+        class="flex justify-between border-b-2 border-b-Very_dark_blue_line pb-4"
+      >
+        <div class="flex items-center">
+          <img src="./images/icon-ethereum.svg" alt="" class="w-2.7 mr-1" />
+          <p class="text-Cyan my-1 text-md ml-1 text-[0.87rem]">0.041 ETH</p>
+        </div>
+        <div class="flex items-center">
+          <img src="./images/icon-clock.svg" alt="" class="w-4 mr-1" />
+          <p class="ml-1 text-Soft_blue text-[0.87rem]">3 Days left</p>
+        </div>
+      </div>
+      <div class="flex items-center mt-4">
+        <img src="./images/image-avatar.png" alt="" class="w-7 mr-1" />
+        <p class="text-White text-[0.89rem]">
+          <span class="text-Soft_blue ml-1">Creation of</span> Jules Wyvern
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
